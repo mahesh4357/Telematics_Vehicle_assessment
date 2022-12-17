@@ -15,9 +15,6 @@
     <Reference Include="GeoCoordinate.NetCore">
       <HintPath>..\..\..\Recruitment-master\VehiclePositions\VehiclePositions_Benchmark_Application\GeoCoordinate.NetCore.dll</HintPath>
     </Reference>
-    <Reference Include="VehiclePositionLookup">
-      <HintPath>..\..\..\Recruitment-master\VehiclePositions\VehiclePositions_Benchmark_Application\VehiclePositionLookup.dll</HintPath>
-    </Reference>
   </ItemGroup>
 
   <ItemGroup>

@@ -8,8 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "NearestVehiclePosition/1.0.0": {
         "dependencies": {
-          "GeoCoordinate.NetCore": "1.0.0.1",
-          "VehiclePositionLookup": "1.0.0.0"
+          "GeoCoordinate.NetCore": "1.0.0.1"
         },
         "runtime": {
           "NearestVehiclePosition.dll": {}
@@ -17,17 +16,9 @@
       },
       "GeoCoordinate.NetCore/1.0.0.1": {
         "runtime": {
-          "GeoCoordinate.NetCore.dll": {
+          "lib/netstandard1.6/GeoCoordinate.NetCore.dll": {
             "assemblyVersion": "1.0.0.1",
             "fileVersion": "1.0.0.1"
-          }
-        }
-      },
-      "VehiclePositionLookup/1.0.0.0": {
-        "runtime": {
-          "VehiclePositionLookup.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
           }
         }
       }
@@ -40,14 +31,11 @@
       "sha512": ""
     },
     "GeoCoordinate.NetCore/1.0.0.1": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "VehiclePositionLookup/1.0.0.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-VrR5MLkh0u2qka79JcQ/GUrgHwGidayCA7nKy2430qYX/JHdrHLgwp1MuBTSsygWs0s2V6GQ0Hp8HUMatHiWFw==",
+      "path": "geocoordinate.netcore/1.0.0.1",
+      "hashPath": "geocoordinate.netcore.1.0.0.1.nupkg.sha512"
     }
   }
 }

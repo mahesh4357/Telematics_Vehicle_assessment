@@ -22,7 +22,7 @@ namespace NearestVehiclePosition
 
         /// <summary>
         /// Below code is exicute once in the lifetime of the application.
-        /// Below method is highly optimised to finish reading 2 million records within 1 second.
+        /// Below method is highly optimised to finish reading 4 million records within 2 second.
         /// Below method caches the binary data into a ConcurrentBag.
         /// Below logic ensures the heavy big size binary data reading operation is only performed
         /// Also to increase the reading speed, binary data is split in 4 different parts
