@@ -14,7 +14,7 @@ namespace NearestVehiclePosition
         /// <param name="args">args</param>
         public static void Main(string[] args)
         {
-            Console.WriteLine("Exicution start time " + DateTime.Now);
+            Console.WriteLine("Execution start time " + DateTime.Now);
             try
             {
                 List<Position> positions = new List<Position>
@@ -37,8 +37,7 @@ namespace NearestVehiclePosition
                 Console.WriteLine($"Unexpected error occured: {ex.Message}");
             }
 
-            Console.WriteLine("Stop by Press any key");
-            Console.WriteLine("Exicution End time " + DateTime.Now);
+            Console.WriteLine("Execution End time " + DateTime.Now);
             Console.ReadLine();
         }
 

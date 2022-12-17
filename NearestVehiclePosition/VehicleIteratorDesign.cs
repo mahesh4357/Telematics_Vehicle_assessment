@@ -4,25 +4,17 @@ using System.IO;
 
 namespace NearestVehiclePosition
 {
-    /// <summary>
-    /// Abstraction to read binary data in chunks 
-    /// </summary>
+    /// Abstraction is used to read binary data in parts 
     public interface IVehicleIteratorDesign : IDisposable
-    {
-        /// <summary>
+    { 
         /// Identifies If read operation has reached its limit
-        /// </summary>
         bool HasLimitReached { get; }
 
-        /// <summary>
         /// Returns the vehicle details from binary data
-        /// </summary>
         /// <returns></returns>
         VehicleDetails NextVehicle();
 
-        /// <summary>
         /// Total binary data size/ Length
-        /// </summary>
         long Length { get; }
     }
     public class VehicleIteratorDesign: IVehicleIteratorDesign
@@ -42,7 +34,7 @@ namespace NearestVehiclePosition
         }
 
         /// <summary>
-        /// Constructor that initializes position and limit to read binary data in multiple chunks
+        /// Constructor that initializes position and limit to read binary data in multiple parts
         /// </summary>
         /// <param name="postion">postion to start reading</param>
         /// <param name="limit">limit to stop reading</param>

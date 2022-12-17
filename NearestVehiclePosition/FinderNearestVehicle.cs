@@ -22,15 +22,15 @@ namespace NearestVehiclePosition
 
         /// <summary>
         /// Below code is exicute once in the lifetime of the application.
-        /// Below method is highly optimised to finish reading 4 million records within 2 second.
+        /// Below method is highly optimised to finish reading 2 million records within 2 second.
         /// Below method caches the binary data into a ConcurrentBag.
         /// Below logic ensures the heavy big size binary data reading operation is only performed
         /// Also to increase the reading speed, binary data is split in 4 different parts
         /// where reading start position and stop limit is calculated based on the total binary data size.
         /// Each of the part is triggered on seperate .NET Task executing in parallel,
         /// which ensures the read operation completes within 1 second.
-        /// If not done in parts and in parallel, sequential read otherwise takes more than 6 seconds to
-        /// read 2 million records.
+        /// If not done in parts and in parallel, sequential read otherwise takes 
+        /// more than 6 seconds to read 2 million records.
         /// </summary>
         public void CacheVehicles()
         {
@@ -42,7 +42,7 @@ namespace NearestVehiclePosition
             Stopwatch stopWatch = new Stopwatch();
             stopWatch.Start();
 
-            // Read vehicle details in parallel splitting data in 4 big chunks
+            // Read vehicle details in parallel splitting data in 4 big parts
             long dataSize;
             using (IVehicleIteratorDesign vehiclePositionsIterator = new VehicleIteratorDesign())
             {
