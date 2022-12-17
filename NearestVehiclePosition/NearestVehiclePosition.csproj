@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="GeoCoordinate.NetCore">
+      <HintPath>..\..\..\Recruitment-master\VehiclePositions\VehiclePositions_Benchmark_Application\GeoCoordinate.NetCore.dll</HintPath>
+    </Reference>
+    <Reference Include="VehiclePositionLookup">
+      <HintPath>..\..\..\Recruitment-master\VehiclePositions\VehiclePositions_Benchmark_Application\VehiclePositionLookup.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="VehiclePositions.dat">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
