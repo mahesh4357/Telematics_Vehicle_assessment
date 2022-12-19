@@ -21,8 +21,8 @@ namespace NearestVehiclePosition
         }
 
         /// <summary>
-        /// Below code is exicute once in the lifetime of the application.
-        /// Below method is highly optimised to finish reading 2 million records within 2 second.
+        /// Below code is execute once in the lifetime of the application.
+        /// Below method is highly optimised to finish reading 2 million records within 3 second.
         /// Below method caches the binary data into a ConcurrentBag.
         /// Below logic ensures the heavy big size binary data reading operation is only performed
         /// Also to increase the reading speed, binary data is split in 4 different parts
@@ -30,7 +30,7 @@ namespace NearestVehiclePosition
         /// Each of the part is triggered on seperate .NET Task executing in parallel,
         /// which ensures the read operation completes within 1 second.
         /// If not done in parts and in parallel, sequential read otherwise takes 
-        /// more than 6 seconds to read 2 million records.
+        /// more than 5 seconds to read 2 million records.
         /// </summary>
         public void CacheVehicles()
         {

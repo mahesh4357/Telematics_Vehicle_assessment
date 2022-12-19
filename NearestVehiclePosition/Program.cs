@@ -9,12 +9,11 @@ namespace NearestVehiclePosition
     {
         /// <summary>
         /// Provided assessment input data here prepares by main function.
-        /// 10 given positions is added and passed to the method that uses FinderNearestVehicle.
+        /// 10 given positions is added and passed to the method that uses FindNearestVehicle.
         /// </summary>
         /// <param name="args">args</param>
         public static void Main(string[] args)
         {
-            Console.WriteLine("Execution start time " + DateTime.Now);
             try
             {
                 List<Position> positions = new List<Position>
@@ -36,8 +35,7 @@ namespace NearestVehiclePosition
             {
                 Console.WriteLine($"Unexpected error occured: {ex.Message}");
             }
-
-            Console.WriteLine("Execution End time " + DateTime.Now);
+            Console.WriteLine($"Press any key to close this window.");
             Console.ReadLine();
         }
 

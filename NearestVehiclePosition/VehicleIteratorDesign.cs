@@ -4,6 +4,11 @@ using System.IO;
 
 namespace NearestVehiclePosition
 {
+    ///<summary>
+    /// The above class decorate the Iterator design pattern which help to read and 
+    /// sort access the elements of a 2 million collection object in a sequential manner 
+    /// </summary>
+
     /// Abstraction is used to read binary data in parts 
     public interface IVehicleIteratorDesign : IDisposable
     { 
@@ -25,7 +30,7 @@ namespace NearestVehiclePosition
         private long _limit;
 
         /// <summary>
-        /// Default constructor used to get binary data size
+        ///Below Default constructor used to get binary data size
         /// </summary>
         public VehicleIteratorDesign()
         {
@@ -34,7 +39,7 @@ namespace NearestVehiclePosition
         }
 
         /// <summary>
-        /// Constructor that initializes position and limit to read binary data in multiple parts
+        /// Below Constructor that initializes position and limit to read binary data in multiple parts
         /// </summary>
         /// <param name="postion">postion to start reading</param>
         /// <param name="limit">limit to stop reading</param>
